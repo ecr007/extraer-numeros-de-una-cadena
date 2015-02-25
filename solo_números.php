@@ -1,6 +1,6 @@
 <?php 
 	function solo_numeros($cadena){
-		$resultado = ereg_replace("[^0-9]", "", $cadena);
+		$resultado = preg_replace("[^0-9]", "", $cadena);
 
 		return $resultado;
 	}
